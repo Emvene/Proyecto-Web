@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fondo {
+    background: linear-gradient(135deg, #00aaff, #0077cc);
+    padding: 20px;
+}
+
+.portada-bg {
+    background: linear-gradient(135deg, #002244, #004488); /* Fondo alternativo */
+    background-image: url('../imagenes/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+}
+
+
+#container_principal {
+    height: 90vh;
+    background-color: #000;
+}
+
+footer h2, header h1 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.animate-entry {
+    animation: fadeInUp 1s ease-out;
+}
+.animate-entry-delay {
+    animation: fadeInUp 1.5s ease-out;
+}
+.animate-entry-late {
+    animation: fadeInUp 2s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Estilo para los infospots personalizados */
+.panolens-infospot .custom-infospot {
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Botón de regreso */
+#btn-regresar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, #00bcd4, #2196f3);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#btn-regresar:hover {
+    background: linear-gradient(135deg, #2196f3, #00bcd4);
+    transform: scale(1.05);
+}
+
+
+/* Accesibilidad */
+a:focus, button:focus {
+    outline: 3px dashed #ffaa00;
+    outline-offset: 4px;
+}
