@@ -1,0 +1,62 @@
+// ================================
+// SCROLL TOP
+// ================================
+const scrollBtn = document.getElementById("scrollTop");
+
+window.addEventListener("scroll", () => {
+    scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+// ================================
+// ANIMACIÓN FADE + SLIDE HACIA ARRIBA
+// Igual al hero, se activa al hacer scroll
+// ================================
+document.querySelectorAll(".producto, .video, .contacto").forEach(el => {
+    el.style.opacity   = "0";
+    el.style.transform = "translateY(40px)";
+    el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+
+    new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity   = "1";
+                entry.target.style.transform = "translateY(0)";
+                obs.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 }).observe(el);
+});
+
+
+// ================================
+// VALIDACIÓN DEL FORMULARIO
+// ================================
+const formulario = document.getElementById("formContacto");
+const formError  = document.getElementById("formError");
+
+formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+
+    if (!nombre || !correo) {
+        formError.textContent = "Por favor completá todos los campos.";
+        return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(correo)) {
+        formError.textContent = "Ingresá un correo electrónico válido.";
+        return;
+    }
+
+    formError.textContent = "";
+    alert(`¡Gracias, ${nombre}! Te has suscrito correctamente.`);
+    formulario.reset();
+});
