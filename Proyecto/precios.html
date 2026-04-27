@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios | RentaCar CR</title>
+    <link rel="icon" type="image/png" href="https://img.icons8.com/fluency/48/car-rental.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reglas.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <i class="bi bi-car-front-fill"></i>Renta<span>Car</span> CR
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+            <i class="bi bi-list text-white" style="font-size:1.4rem"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="autos.html">Autos</a></li>
+                <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link" href="precios.html">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section class="page-header">
+    <div class="ph-bg"></div>
+    <div class="ph-content">
+        <h1>Precios y Planes</h1>
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-item active">Precios</li>
+        </ol>
+    </div>
+    <div class="ph-clip"></div>
+</section>
+
+<section class="seccion">
+    <div class="container">
+        <div class="seccion-titulo">
+            <span class="label">Tarifas</span>
+            <h2>Planes <span>flexibles</span></h2>
+            <p>Escogé el plan que mejor se adapte a tu necesidad. Sin costos ocultos, sin sorpresas.</p>
+        </div>
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-4 reveal">
+                <div class="precio-card">
+                    <h3 class="precio-titulo">Económico</h3>
+                    <p class="precio-sub">Ideal para uso urbano</p>
+                    <div class="precio-monto">$32<small>/día</small></div>
+                    <ul>
+                        <li>Auto categoría económica</li>
+                        <li>Aire acondicionado</li>
+                        <li>Seguro básico incluido</li>
+                        <li>Kilometraje limitado</li>
+                        <li>Soporte 24/7</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primario w-100">Reservar</a>
+                </div>
+            </div>
+            <div class="col-lg-4 reveal">
+                <div class="precio-card destacado">
+                    <span class="badge-popular">Popular</span>
+                    <h3 class="precio-titulo">Estándar</h3>
+                    <p class="precio-sub">El más solicitado</p>
+                    <div class="precio-monto">$55<small>/día</small></div>
+                    <ul>
+                        <li>SUV o Sedán</li>
+                        <li>Aire acondicionado</li>
+                        <li>Seguro completo</li>
+                        <li>Kilometraje ilimitado</li>
+                        <li>GPS incluido</li>
+                        <li>Soporte 24/7</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primario w-100">Reservar</a>
+                </div>
+            </div>
+            <div class="col-lg-4 reveal">
+                <div class="precio-card">
+                    <h3 class="precio-titulo">Premium 4x4</h3>
+                    <p class="precio-sub">Para aventureros</p>
+                    <div class="precio-monto">$95<small>/día</small></div>
+                    <ul>
+                        <li>4x4 Premium o Pickup</li>
+                        <li>Aire acondicionado</li>
+                        <li>Seguro full cobertura</li>
+                        <li>Kilometraje ilimitado</li>
+                        <li>GPS + Conductor adicional</li>
+                        <li>Asistencia VIP 24/7</li>
+                    </ul>
+                    <a href="contacto.html" class="btn btn-primario w-100">Reservar</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5 reveal">
+            <p class="text-muted">
+                <button type="button" class="btn btn-link p-0 text-danger fw-bold" data-bs-toggle="tooltip" data-bs-placement="top" title="Aplicamos descuentos para reservaciones de 7 días o más">
+                    <i class="bi bi-info-circle"></i> ¿Querés un descuento?
+                </button>
+                &nbsp;|&nbsp;
+                <button type="button" class="btn btn-link p-0 text-danger fw-bold" data-bs-toggle="popover" data-bs-trigger="focus" title="Métodos de pago" data-bs-content="Aceptamos tarjetas Visa, MasterCard, AMEX, transferencias bancarias y efectivo (con depósito).">
+                    <i class="bi bi-credit-card"></i> Métodos de pago
+                </button>
+            </p>
+        </div>
+
+        <div class="row mt-5 reveal">
+            <div class="col-12">
+                <div class="seccion-titulo">
+                    <h2>Tabla <span>comparativa</span></h2>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center align-middle bg-white">
+                        <thead style="background:#1d3557;color:white">
+                            <tr>
+                                <th>Característica</th>
+                                <th>Económico</th>
+                                <th>Estándar</th>
+                                <th>Premium 4x4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Tipo de vehículo</td><td>Económico</td><td>SUV/Sedán</td><td>4x4 Premium</td></tr>
+                            <tr><td>Kilometraje</td><td>200 km/día</td><td>Ilimitado</td><td>Ilimitado</td></tr>
+                            <tr><td>Seguro</td><td>Básico</td><td>Completo</td><td>Full cobertura</td></tr>
+                            <tr><td>GPS</td><td>—</td><td><i class="bi bi-check-lg text-success"></i></td><td><i class="bi bi-check-lg text-success"></i></td></tr>
+                            <tr><td>Conductor adicional</td><td>—</td><td>—</td><td><i class="bi bi-check-lg text-success"></i></td></tr>
+                            <tr><td>Asistencia 24/7</td><td><i class="bi bi-check-lg text-success"></i></td><td><i class="bi bi-check-lg text-success"></i></td><td>VIP</td></tr>
+                            <tr><td>Precio por día</td><td><strong>$32</strong></td><td><strong>$55</strong></td><td><strong>$95</strong></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-brand"><i class="bi bi-car-front-fill"></i>RentaCar CR</div>
+                <p>Tu mejor opción para alquiler de autos en Costa Rica desde 2014. Calidad, seguridad y los mejores precios.</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+                    <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                    <a href="https://wa.me/50688889999" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <h5>Enlaces</h5>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="autos.html">Autos</a></li>
+                    <li><a href="precios.html">Precios</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Contacto</h5>
+                <ul>
+                    <li><i class="bi bi-geo-alt me-2"></i>San José, Costa Rica</li>
+                    <li><i class="bi bi-telephone me-2"></i>+506 2222-3333</li>
+                    <li><i class="bi bi-envelope me-2"></i>info@rentacar.cr</li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h5>Horario</h5>
+                <ul>
+                    <li>Lunes - Viernes: 7:00 - 20:00</li>
+                    <li>Sábados: 8:00 - 18:00</li>
+                    <li>Domingos: 9:00 - 16:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">© 2026 RentaCar CR — Todos los derechos reservados</div>
+    </div>
+</footer>
+
+<a href="https://wa.me/50688889999" target="_blank" class="whatsapp-chat" title="Escríbenos por WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

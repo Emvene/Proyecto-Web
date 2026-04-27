@@ -1,0 +1,166 @@
+
+
+@media (max-width: 992px) {
+    .seccion {
+        padding: 60px 0;
+    }
+
+    .hero {
+        height: 90vh;
+        min-height: 520px;
+    }
+
+    .precio-card.destacado {
+        transform: scale(1);
+        margin-top: 30px;
+    }
+
+    .carousel-full .carousel-inner,
+    .carousel-full .carousel-item {
+        height: 55vh;
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seccion {
+        padding: 50px 0;
+    }
+
+    .seccion-titulo {
+        margin-bottom: 40px;
+    }
+
+    .page-header {
+        height: 240px;
+    }
+
+    .form-rentacar {
+        padding: 28px 20px;
+    }
+
+    .mapa-full {
+        height: 350px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .shape-clip {
+        padding: 50px 24px;
+        clip-path: polygon(0 0, 100% 4%, 100% 96%, 0 100%);
+    }
+
+    .carousel-full .carousel-caption {
+        bottom: 18%;
+
+        h2 { font-size: 1.7rem; }
+        p { font-size: 0.95rem; }
+    }
+}
+
+@media (max-width: 576px) {
+    body { font-size: 0.95rem; }
+
+    .seccion {
+        padding: 40px 0;
+    }
+
+    .hero {
+        height: 85vh;
+        min-height: 480px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.15;
+    }
+
+    .hero .hero-content p {
+        font-size: 0.95rem;
+    }
+
+    .page-header {
+        height: 200px;
+
+        h1 { font-size: 1.8rem; }
+    }
+
+    .precio-card {
+        padding: 30px 20px;
+
+        .precio-monto { font-size: 2.2rem; }
+    }
+
+    .carousel-full .carousel-inner,
+    .carousel-full .carousel-item {
+        height: 45vh;
+        min-height: 320px;
+    }
+
+    .carousel-full .carousel-caption {
+        bottom: 14%;
+        padding: 0 12px;
+
+        h2 { font-size: 1.4rem; }
+        p { font-size: 0.85rem; }
+    }
+
+    .auto-card .auto-body { padding: 18px; }
+
+    .icono-card { padding: 28px 18px; }
+
+    .form-rentacar { padding: 24px 16px; }
+
+    .whatsapp-chat {
+        width: 52px;
+        height: 52px;
+        font-size: 1.5rem;
+        bottom: 18px;
+        right: 18px;
+    }
+
+    .mapa-full { height: 280px; }
+
+    footer {
+        padding: 40px 0 0;
+        text-align: center;
+
+        .social-icons {
+            justify-content: center;
+        }
+    }
+
+    .shape-clip {
+        padding: 40px 18px;
+
+        h3 { font-size: 1.4rem; }
+    }
+}
+
+@media (max-width: 380px) {
+    .hero .hero-content {
+        padding: 16px;
+
+        h1 { font-size: 1.7rem; }
+        .hero-tag { font-size: 0.75rem; }
+    }
+
+    .seccion-titulo h2 {
+        font-size: 1.5rem;
+    }
+
+    .precio-card .precio-monto {
+        font-size: 2rem;
+    }
+
+    .auto-card .auto-body h3 {
+        font-size: 1.1rem;
+    }
+
+    .btn-primario, .btn-secundario {
+        padding: 10px 20px;
+        font-size: 0.88rem;
+    }
+}
